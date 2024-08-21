@@ -4,8 +4,9 @@ import { IsString, IsEmail, IsInt, Min, Max, IsOptional, IsBoolean } from 'class
 @InputType()
 export class UpdateUserInput {
   @Field(() => Int, { description: 'Id of the user' })
+  @IsOptional()
   @IsInt()
-  id: number
+  id?: number
 
   @Field(() => String, { description: 'Name of the user', nullable: true })
   @IsOptional()
