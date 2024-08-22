@@ -1,5 +1,20 @@
 ### Documentación de la API REST
 
+#### Modelos
+
+**User**
+
+### User Object
+
+| Property  | Type    | Restrictions                                             | Updatable |
+|-----------|---------|---------------------------------------------------------|-----------|
+| id        | String  | Auto-generated, Unique                                   | No        |
+| name      | String  | Required, Must be a string                               | Yes       |
+| email     | String  | Required, Must be a valid email                          | Yes       |
+| age       | Integer | Required, Must be an integer between 18 and 99           | Yes       |
+| isActive  | Boolean | Optional, Must be a boolean                              | Yes       |
+
+
 #### **Endpoint: Autenticación**
 
 **Login**
