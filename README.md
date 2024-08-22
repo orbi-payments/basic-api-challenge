@@ -20,14 +20,7 @@ Esta API permite gestionar usuarios y proteger los endpoints utilizando JWT para
    ```bash
    npm install
    ```
-
-3. Configura el entorno:
-   Crea un archivo `.env` en la raíz del proyecto con la siguiente configuración:
-   ```env
-   JWT_SECRET=yourSecretKey
-   JWT_EXPIRATION=10s
-   ```
-
+   
 ## Levantar la API
 
 1. **Desarrollo sin Docker:**
